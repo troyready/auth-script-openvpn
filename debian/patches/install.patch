@@ -1,0 +1,15 @@
+Description: Add make install target
+ Upstream Makefile has no install target.
+Author: Troy Ready <troy@troyready.com>
+--- a/Makefile
++++ b/Makefile
+@@ -8,5 +8,9 @@
+ 	$(CC) $(CFLAGS) $(LDFLAGS) -I. -I/usr/include/openvpn -c auth_script.c
+ 	$(CC) $(CFLAGS) $(LDFLAGS) -Wl,-soname,auth_script=.so -o auth_script.so auth_script.o
+ 
++install:
++	install -d $(DESTDIR)/usr/lib/openvpn
++	install ./auth_script.so $(DESTDIR)/usr/lib/openvpn
++
+ clean:
+ 	rm -f *.o *.so

@@ -1,0 +1,15 @@
+Source: openvpn-auth-script
+Priority: extra
+Maintainer: Troy Ready <troy@troyready.com>
+Build-Depends: debhelper (>= 9), openvpn (>=2)
+Standards-Version: 3.9.8
+Section: net
+Homepage: https://github.com/fac/auth-script-openvpn
+
+Package: openvpn-auth-script
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, openvpn (>=2)
+Description: OpenVPN script authentication module
+ Runs an external script to decide whether to authenticate a user or not. Useful
+ for checking 2FA on VPN auth attempts as it doesn't block the main openvpn
+ process, unlike passing the script to --auth-user-pass-verify flag.

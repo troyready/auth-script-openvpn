@@ -1,0 +1,5 @@
+openvpn-auth-script (0.0.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #873230)
+
+ -- Troy Ready <troy@troyready.com>  Fri, 25 Aug 2017 09:20:47 -0700
