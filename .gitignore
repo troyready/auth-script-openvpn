@@ -49,3 +49,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Debian specific
+debian/debhelper-build-stamp
+debian/files
+debian/openvpn-auth-script.debhelper.log
+debian/openvpn-auth-script.substvars
+debian/openvpn-auth-script/

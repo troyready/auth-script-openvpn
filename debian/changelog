@@ -1,3 +1,9 @@
+openvpn-auth-script (0.0.2-1) unstable; urgency=medium
+
+  * Drop custom package patches that have been merged upstream
+
+ -- Troy Ready <troy@troyready.com>  Thu, 26 Oct 2017 10:21:00 -0700
+
 openvpn-auth-script (0.0.1-1) unstable; urgency=medium
 
   * Initial release (Closes: #873230)

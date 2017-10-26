@@ -3,9 +3,9 @@ Description: Add make install target
 Author: Troy Ready <troy@troyready.com>
 --- a/Makefile
 +++ b/Makefile
-@@ -8,5 +8,9 @@
- 	$(CC) $(CFLAGS) $(LDFLAGS) -I. -I/usr/include/openvpn -c auth_script.c
- 	$(CC) $(CFLAGS) $(LDFLAGS) -Wl,-soname,auth_script=.so -o auth_script.so auth_script.o
+@@ -8,5 +8,9 @@ all: plugin
+ plugin: auth_script.c
+ 	$(CC) $(CFLAGS) $(LDFLAGS) -I/usr/include/openvpn -o auth_script.so auth_script.c
  
 +install:
 +	install -d $(DESTDIR)/usr/lib/openvpn
